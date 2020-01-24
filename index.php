@@ -55,4 +55,11 @@ $f3->route('POST /order2',function ()
 
 });
 
+$f3->route('POST /results',function ()
+{
+    $view = new Template();//template object
+    echo $view-> render('views/results.html');//use it to render the main page
+
+});
+
 $f3->run();
