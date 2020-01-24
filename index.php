@@ -39,6 +39,13 @@ $f3->route('GET /@item', function($f3, $params) {
     else {
         $f3->error(404);
     }
+
+
+});
+
+$f3->route('GET /order',function () {
+    $view = new Template();//template object
+    echo $view-> render('views/form1.html');//use it to render the main page
 });
 
 $f3->route('GET /order2',function ()
