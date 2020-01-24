@@ -41,5 +41,11 @@ $f3->route('GET /@item', function($f3, $params) {
     }
 });
 
+$f3->route('GET /order2',function ()
+{
+    $view = new Template();//template object
+    echo $view-> render('views/form2.html');//use it to render the main page
+
+});
 
 $f3->run();
