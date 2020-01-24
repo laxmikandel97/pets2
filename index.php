@@ -39,9 +39,6 @@ $f3->route('GET /@item', function($f3, $params) {
     else {
         $f3->error(404);
     }
-
-
-
 });
 
 
