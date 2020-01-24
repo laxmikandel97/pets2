@@ -18,5 +18,31 @@ $f3->route('GET /',function ()
 
 });
 
+$f3->route('GET /@item', function($f3, $params) {
+    $animal = $params['item'];
+
+    if ($animal == 'chicken') {
+        echo 'Cluck!';
+    }
+    else if ($animal == 'dog') {
+        echo 'Woof!';
+    }
+    else if ($animal == 'cat') {
+        echo 'Meow!';
+    }
+    else if ($animal == 'cow') {
+        echo 'Moo!';
+    }
+    else if ($animal == 'donkey') {
+        echo 'Hee Haw!';
+    }
+    else {
+        $f3->error(404);
+    }
+
+
+
+});
+
 
 $f3->run();
