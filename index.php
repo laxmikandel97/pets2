@@ -48,7 +48,7 @@ $f3->route('GET /order',function () {
     echo $view-> render('views/form1.html');//use it to render the main page
 });
 
-$f3->route('GET /order2',function ()
+$f3->route('POST /order2',function ()
 {
     $view = new Template();//template object
     echo $view-> render('views/form2.html');//use it to render the main page
